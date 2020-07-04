@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/login.css" />    
     <title>Login</title>
 </head>
 <body>
     
+    <video autoplay muted loop id="bg-video">
+        <source src="./videos/bgvideo.mp4" type="video/mp4">
+    </video>
+    <div id="overlay"></div>
+
+    <main class="main">
+        <section class="login">
+            <div class="logo-container">             
+                <picture>
+                    <img src="./imgs/logo-square-text-medium.png" alt="YouTelly" style="width:auto;">
+                </picture>               
+            </div>
+            <div class="form-container">
+                <form action="index.html" method="GET">
+                    <div class="form-element">
+                        <input type="text" id="username" name="username" required>
+                        <label for="username">Username</label>                        
+                    </div>
+                    <div class="form-element">
+                        <input type="password" id="password" name="password" required>
+                        <label for="password">Password</label>                        
+                    </div>                               
+                    <div class="login-button-container">
+                        <button class="login-button" type="submit">Login</button>
+                    </div>     
+                </form>
+                <div class="links">
+                    <div>
+                        <a href="#">New here? Sing-up!</a>
+                    </div>
+                    <div>
+                        <a href="#">Forgotten account?</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
