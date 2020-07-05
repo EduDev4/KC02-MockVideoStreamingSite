@@ -28,7 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem; 
 }
 
 .login{
@@ -40,15 +40,20 @@
 .logo-container{    
     border-top-right-radius: var(--login-border-radius);
     border-top-left-radius: var(--login-border-radius);
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
     background-color: rgba(255,255,255,0.7);
     text-align: center;
+}
+.row-logo{
+    display: none;
+    width: 75%;    
 }
 
 /* Material Login */
 .form-container{    
-    border: 1px solid #fff;
-    background-color: #fff; 
+    border: 1px solid;
+    border-color: rgba(255,255,255,0);
+    background-color: rgba(255,255,255,0.7); 
     border-bottom-right-radius: var(--login-border-radius);
     border-bottom-left-radius: var(--login-border-radius);   
 }
@@ -60,6 +65,8 @@
 
 .form-container .form-element input {
   position: relative;
+  background-color: rgba(255,255,255,0.6);
+  height: 5rem;
   display: block;
   width: 100%;
   padding: 1rem;
@@ -86,7 +93,7 @@
 .form-container .form-element input:focus ~ label,
 .form-container .form-element input:valid ~ label {
     font-size: small;
-    top: -1em;
+    top: 0.5em;
     color: var(--apple-green);
 }
 
@@ -135,6 +142,24 @@
     margin: 1rem;
 }
 
+.form-container .links a{
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+
+    .main .row-logo{        
+        display: inline-block;
+        
+    }
+    .main .column-logo{        
+        display: none;
+    }
+    
+    .form-container .links a{        
+        font-size: 1.2rem;
+    }
+}
 
 /*Responsive BG video */
 @media (min-aspect-ratio: 16/9) {
