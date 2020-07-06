@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/navbar.css" />    
+    <link rel="stylesheet" href="./css/header.css" />
     <title>YouTelly</title>
 </head>
 <body>    
@@ -17,13 +18,20 @@
         </div>
         <div class="search-box">
             <input type="text" placeholder="Search..." class="search-input">                
+        </div>   
+        
+        
+        <div class="flex-burger">            
+            <label for="burger-checkbox" class="burger-label"></label>
         </div>
-        <ul>            
+        
+        <input type="checkbox" id="burger-checkbox" />        
+        <ul class="navbar-list">            
             <li>
                 <a href="#">Novedades</a>
             </li
             ><li>
-                <a href="#">Series</a>
+                <a href="#">Series</a> 
             </li
             ><li>
                 <a href="#">Peliculas</a>
@@ -32,11 +40,9 @@
                 <a href="#">Profile</a>
             </li>
         </ul>
-        <div class="flex-burger">            
-            <label for="burger-checkbox" class="burger-label"></label>
-            <input type="checkbox" id="burger-checkbox" />
-        </div>
-        
+
+
+
     </nav>
     <header>
         <section>
