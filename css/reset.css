@@ -21,6 +21,7 @@
     --mikado-yellow: rgba(255, 193, 7, 1);
 
     --login-border-radius: 50px;
+    --navbar-height: 60px;
 }
 
 body {
