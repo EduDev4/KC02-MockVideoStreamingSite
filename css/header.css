@@ -1,3 +1,116 @@
 header{
-    margin-top: 60px;
+    margin-top: 60px;    
+}
+
+header section{
+    display: block;
+}
+
+section{
+    padding: 1rem;
+}
+
+section .section-title{
+    font-size: 1.5rem;     
+    margin: 0 0 1rem 0;
+    padding: 1rem 1rem 0 0;    
+    width: 100%;
+    border-bottom: 2px solid var(--apple-green);
+    line-height: 1.1rem;
+}
+
+section .release-one{    
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    
+}
+section .release-one video{    
+    width: 100%;
+    border:1px black solid;       
+}
+
+.dot{
+    font-size: 0.8rem;
+    border: 2px solid var(--apple-green);   
+    background-color: rgba(134, 188, 37, 0.8); 
+    height: 0.5rem;
+    padding: 0.5rem;
+    line-height: 0rem;
+    width: auto;
+    border-radius: 5px;
+    position: absolute;
+    bottom:1rem;
+    top:1rem;
+    right: 1rem;
+    z-index: 999;    
+}
+
+.dot2{
+    font-size: 0.8rem;
+    border: 2px solid var(--apple-green);   
+    background-color: rgba(134, 188, 37, 0.8); 
+    height: 0.5rem;
+    padding: 0.5rem;
+    line-height: 0rem;
+    width: auto;
+    border-radius: 5px;
+    position: absolute;    
+    top:3rem;
+    right: 1rem;
+    z-index: 999;  
+}
+
+.dot3{
+    font-size: 0.8rem;
+    border: 2px solid var(--apple-green);   
+    background-color: rgba(134, 188, 37, 0.8); 
+    height: 0.5rem;
+    padding: 0.5rem;
+    line-height: 0rem;
+    width: auto;
+    border-radius: 5px;
+    position: absolute;    
+    top:5rem;
+    right: 1rem;
+    z-index: 999;     
+}
+.arrow .left{
+    transform: rotate(180deg);
+}
+
+section .release-one .overlay{
+    background-color: rgb(255,255,255);    
+}
+
+.release-two{
+    display: none;
+}
+
+.release-three{
+    display: none;
+}
+
+
+@media (min-width:768px){
+    section .release-one video:hover ~ .overlay{
+        display: block;
+    }
+    section .release-one .overlay:hover{
+        display: block;
+    }
+    section .release-one .overlay{
+        background-color: rgba(255,255,255,0.8);    
+        height: auto;
+        position: absolute;
+        bottom:0;
+        width: 100%;
+        padding: 1rem;
+        display: none;        
+        z-index: 999;         
+    }
+}
+section .release-one .overlay .release-title{
+    margin:0;
 }

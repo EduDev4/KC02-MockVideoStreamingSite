@@ -12,6 +12,7 @@
     top:0;
     left:0;
     z-index: 9999;
+    outline: 4px solid var(--apple-green);
     
 }
 
@@ -34,7 +35,8 @@
     justify-content: space-evenly;
     position: absolute;  
     top:60px;     
-    width: 100vw;    
+    width: 100vw; 
+       
 }
 
 #navbar .navbar-list > li {
@@ -154,7 +156,7 @@
         border: 0px;  
         width: 100%;
         height: 60px;
-        min-width: 90px;
+        min-width: 110px;
      
     }
     #navbar .navbar-list li > a { 
