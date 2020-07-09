@@ -33,8 +33,60 @@ section .release-one{
 }
 section .release-one video{    
     width: 100%;
-    border:1px black solid;       
+    border:1px black solid;     
+    box-shadow: 0px 0px 100px 0 rgba(255,255,255,0.25);
+    animation: tv-glow;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
 }
+
+
+@keyframes tv-glow {
+    0% {
+        box-shadow: 0px 0px 20px 0 rgba(255,255,255,0.15);
+    }
+  
+    10% {
+        box-shadow: 0px 0px 200px 0 rgba(255,255,255,0.04);
+    }
+
+    20% {
+        box-shadow: 0px 0px 20px 0 rgba(255,255,255,0.20);
+    }
+
+    30% {
+        box-shadow: 0px 0px 50px 0 rgba(255,255,255,0.10);
+    }
+
+    40% {
+        box-shadow: 0px 0px 20px 0 rgba(255,255,255,0.25);
+    }
+
+    50% {
+        box-shadow: 0px 0px 75px 0 rgba(255,255,255,0.05);
+    }
+
+    60% {
+        box-shadow: 0px 0px 50px 0 rgba(255,255,255,0.05);
+    }
+
+    70% {
+        box-shadow: 0px 0px 20px 0 rgba(255,255,255,0.10);
+    }
+
+    80%{
+        box-shadow: 0px 0px 200px 0 rgba(255,255,255,0.12);
+    }
+
+    90%{
+        box-shadow: 0px 0px 50px 0 rgba(255,255,255,0.25);
+    }
+
+    100%{
+        box-shadow: 0px 0px 20px 0 rgba(255,255,255,0.1);
+    }
+  }
+
 
 .dot{
     font-size: 0.8rem;
