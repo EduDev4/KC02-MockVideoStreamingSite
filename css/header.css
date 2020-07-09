@@ -142,14 +142,6 @@ section .release-one .overlay{
     padding: 1rem;   
 }
 
-.release-two{
-    display: none;
-}
-
-.release-three{
-    display: none;
-}
-
 @media (max-width:425px){
     section .release-one .overlay{
         font-size: 10pt;
@@ -157,10 +149,12 @@ section .release-one .overlay{
 }
 @media (min-width:768px){
     section .release-one video:hover ~ .overlay{
-        display: block;
-    }
+        opacity: 1;
+        animation: overlay-in 0.3s ease-in-out;
+    }    
     section .release-one .overlay:hover{
-        display: block;
+        opacity: 1;
+        animation: overlay-in 0.3s ease-in-out;
     }
     section .release-one .overlay{
         background-color: rgba(255,255,255,0.8);    
@@ -169,8 +163,25 @@ section .release-one .overlay{
         bottom:0;
         width: 100%;
         padding: 1rem;
-        display: none;        
-        z-index: 999;         
+        opacity: 0;       
+        z-index: 999; 
+        animation: overlay-out 0.3s ease-in-out;        
+    }
+    @keyframes overlay-in {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    @keyframes overlay-out {
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+        }
     }
 }
 section .release-one .overlay .release-title{
