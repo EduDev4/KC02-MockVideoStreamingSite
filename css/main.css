@@ -4,8 +4,7 @@ main section .items-container{
     justify-content: flex-start;  
     flex-wrap: nowrap;  
     overflow-y: scroll;
-    width: 100%;
-    border:1px solid orange;
+    width: 100%;    
 }
 
 
@@ -20,14 +19,13 @@ main section article{
 
 @media (min-width:768px){
     main section .items-container{        
-        flex-wrap: wrap;
-        flex-basis: 21%;
-        overflow-y: inherit;       
+        flex-wrap: nowrap;        
+        overflow-y: scroll;       
         max-height: 400px;
     }
 
-    main article{
-        border: 1px solid red;
+    main section article{
+        outline: 1px solid red;
         width: 200px;
         height: 300px;
     }
