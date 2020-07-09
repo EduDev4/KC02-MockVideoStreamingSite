@@ -1,5 +1,7 @@
 header{
-    margin-top: 60px;    
+    margin-top: 60px;   
+    max-width: 1000px; 
+    margin: auto;
 }
 
 header section{
@@ -17,7 +19,10 @@ section{
     width: 100%;
     border-bottom: 2px solid var(--apple-green);
     line-height: 1.1rem;
+    color: #DDD;
+    letter-spacing: 0.2rem;
 }
+
 
 section .release-one{    
     width: 100%;
@@ -81,7 +86,8 @@ section .release-one video{
 }
 
 section .release-one .overlay{
-    background-color: rgb(255,255,255);    
+    background-color: rgba(255,255,255,0.8); 
+    padding: 1rem;   
 }
 
 .release-two{
@@ -92,7 +98,11 @@ section .release-one .overlay{
     display: none;
 }
 
-
+@media (max-width:425px){
+    section .release-one .overlay{
+        font-size: 10pt;
+    }
+}
 @media (min-width:768px){
     section .release-one video:hover ~ .overlay{
         display: block;
