@@ -37,7 +37,7 @@ section .release-one video{
     box-shadow: 0px 0px 100px 0 rgba(255,255,255,0.25);
     animation: tv-glow;
     animation-iteration-count: infinite;
-    animation-duration: 3s;
+    animation-duration: 5s;
 }
 
 
@@ -47,7 +47,7 @@ section .release-one video{
     }
   
     10% {
-        box-shadow: 0px 0px 200px 0 rgba(255,255,255,0.04);
+        box-shadow: 0px 0px 100px 0 rgba(255,255,255,0.04);
     }
 
     20% {
@@ -55,11 +55,11 @@ section .release-one video{
     }
 
     30% {
-        box-shadow: 0px 0px 50px 0 rgba(255,255,255,0.10);
+        box-shadow: 0px 0px 200px 0 rgba(255,255,255,0.10);
     }
 
     40% {
-        box-shadow: 0px 0px 20px 0 rgba(255,255,255,0.25);
+        box-shadow: 0px 0px 300px 0 rgba(255,255,255,0.25);
     }
 
     50% {
@@ -75,7 +75,7 @@ section .release-one video{
     }
 
     80%{
-        box-shadow: 0px 0px 200px 0 rgba(255,255,255,0.12);
+        box-shadow: 0px 0px 70px 0 rgba(255,255,255,0.12);
     }
 
     90%{
