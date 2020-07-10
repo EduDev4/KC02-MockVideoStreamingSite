@@ -47,6 +47,19 @@ footer section ul li{
     color: #666;
 }
 
+footer a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #666;
+}
+footer a:visited{
+    color: #666;
+}
+
+footer .last-line{
+    font-size: 9pt;
+}
+
 @media (max-width:1024px){
     footer .footer-elements-container{ 
         max-width: 625px;
