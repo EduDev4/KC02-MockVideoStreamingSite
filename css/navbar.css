@@ -12,8 +12,7 @@
     top:0;
     left:0;
     z-index: 9999;
-    outline: 4px solid var(--apple-green);
-    
+    outline: 4px solid var(--apple-green);    
 }
 
 #navbar .logo-large{

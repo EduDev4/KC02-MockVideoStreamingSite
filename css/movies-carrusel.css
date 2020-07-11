@@ -1,0 +1,107 @@
+main .movies-carrusel > .items-container{
+    display: flex;
+    justify-content: flex-start;  
+    flex-wrap: nowrap;  
+    overflow-y: hidden;
+    width: 100%;   
+    margin-bottom: 2rem;  
+}
+
+main .movies-carrusel article{    
+    width: 100px;
+    height: 150px;
+    margin-right: 1rem;
+    margin-bottom: 1rem; 
+    position: relative;   
+}
+
+main .movies-carrusel .icons-ribbon{    
+    position: absolute;
+    top:0.1rem;
+    right: 0.1rem;
+    z-index: 999;
+    opacity: 0;
+}
+
+main .movies-carrusel article:hover > .icons-ribbon{
+    opacity: 1;
+}
+
+main .movies-carrusel article:hover > .overlay-cover{
+    display: block;
+}
+
+main .movies-carrusel .icon-ribbon{
+    box-sizing: unset;
+    border: 1px solid rgba(0,0,0,0.5);
+    height: 15px;
+    width: 15px;
+    padding: 0.3rem;
+    margin-bottom: 0.2rem;
+    border-radius: 0.5rem;
+    background-color: rgba(255,255,255,0.7);
+    cursor: pointer;
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,1);
+}
+
+main .movies-carrusel .fav-icon img{
+    height: 15px;
+    width: 15px;
+}
+
+main .movies-carrusel .overlay-cover{
+    position: absolute;
+    background-color: rgba(255,255,255,0.95);
+    overflow-y: auto;
+    word-wrap: break-word;
+    width: 100%;
+    padding: 0 0.1rem;
+    top:50%;
+    vertical-align: top;
+    left: 0;
+    z-index: 999;
+    height: 50%;
+    font-size: 9pt;
+    display: none;
+    box-shadow: 0px -10px 20px 0 rgba(0,0,0,1);
+    
+}
+main .movies-carrusel .overlay-cover p{
+    margin: 0.1rem 0;
+}
+
+@media (min-width:768px){
+    main .movies-carrusel .items-container{        
+        flex-wrap: wrap;
+        justify-content: space-between;
+        overflow-y: auto;       
+        max-height: 400px;
+    }
+
+    main .movies-carrusel article{        
+        margin-bottom: 2rem;
+        width: 200px;
+        height: 300px;
+    }
+
+
+    main .movies-carrusel  .icons-ribbon{            
+        top:0.5rem;
+        right: 0.5rem;
+    }
+    
+    main .movies-carrusel  .icon-ribbon{
+        height: 30px;
+        width: 30px;
+    }
+
+    main .movies-carrusel  .fav-icon img{
+        height: 30px;
+        width: 30px;
+    }
+
+    main .movies-carrusel  .overlay-cover{
+        font-size: unset;
+        padding: 0.5rem;
+    }
+}
