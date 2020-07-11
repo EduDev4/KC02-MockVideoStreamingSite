@@ -57,6 +57,9 @@
     line-height: 4rem;        
     font-size: 2rem;
 }
+.profile-icon{
+    vertical-align: middle;
+}
 
 #navbar .search-box{            
     flex-grow: 1;    
