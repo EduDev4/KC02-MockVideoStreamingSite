@@ -3,14 +3,15 @@ main section .items-container{
     justify-content: flex-start;  
     flex-wrap: nowrap;  
     overflow-y: hidden;
-    width: 100%;    
+    width: 100%;   
+    margin-bottom: 2rem;  
 }
 
 main section article{    
     width: 100px;
     height: 150px;
-    margin-right: 1rem;   
-    margin-bottom: 0.3rem;  
+    margin-right: 1rem;
+    margin-bottom: 1rem; 
     position: relative;   
 }
 
@@ -85,7 +86,7 @@ main section article:hover > .overlay-cover{
     }
 
     main section article{        
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         width: 200px;
         height: 300px;
     }
