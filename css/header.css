@@ -1,5 +1,5 @@
 section{
-    padding: 1rem;
+    margin: 1rem;
 }
 
 .section-title{
@@ -11,4 +11,11 @@ section{
     line-height: 1.1rem;
     color: #DDD;
     letter-spacing: 0.2rem;
+}
+
+@media (min-width:768px){
+    header{
+        margin: auto;
+        padding: 2rem;
+    }    
 }
