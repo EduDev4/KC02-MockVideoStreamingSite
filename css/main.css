@@ -13,7 +13,7 @@ main section .items-container{
 main section article{    
     width: 100px;
     height: 150px;
-    margin-right: 2rem;   
+    margin-right: 1rem;   
     margin-bottom: 0.3rem;     
 }
 
@@ -27,7 +27,7 @@ main section article{
     }
 
     main section article{        
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         width: 200px;
         height: 300px;
     }
