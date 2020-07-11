@@ -1,7 +1,4 @@
-main{
-    margin: auto;
-    padding: 2rem;
-}
+
 main section .items-container{
     display: flex;
     justify-content: flex-start;  
@@ -19,6 +16,11 @@ main section article{
 
 
 @media (min-width:768px){
+    main{
+        margin: auto;
+        padding: 2rem;
+    }
+    
     main section .items-container{        
         flex-wrap: wrap;
         justify-content: space-between;
