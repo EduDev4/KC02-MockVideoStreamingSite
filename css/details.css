@@ -5,12 +5,13 @@
     margin-top: calc(1rem + 60px);
     display: grid;
     grid-template-columns: minmax(100px,100px) minmax(100px, auto);
-    grid-template-rows: repeat(4,auto);
+    grid-template-rows: auto 150px auto auto;
     gap: 0.5rem;
     grid-template-areas: "header header"
                             "cover info"
                             "details details"
-                            "related related";       
+                            "related related";
+    color:#DDD;     
 }
 
 .header-tree-path{
@@ -25,32 +26,88 @@
 }
 
 .grid-cover{
-    width: 100px;    
-    grid-area: cover;
-    border:1px solid red;    
+    width: 100px;   
+    height: 150px; 
+    grid-area: cover;      
 }
 .grid-info{
     grid-area: info;
-    border:1px solid burlywood;
+    background-color: #333;    
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    position: relative;    
 }
 .grid-details{
     grid-area: details;    
-    border:1px solid greenyellow;
+    background-color: #333;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.grid-details .details-trailer-container{    
+    margin: 0.5rem;
+}
+
+.grid-details .details-trailer{
+    width: 100%;        
+}
+
+.grid-info .rating img{
+    width: 20px;
+    height: 20px;
+}
+
+.grid-info .icons-ribbon{    
+    position: absolute;
+    top:1rem;
+    right: 1rem;
+    z-index: 999;
+}
+
+.grid-info .icon-ribbon{
+    box-sizing: unset;
+    border: 1px solid rgba(0,0,0,0.5);
+    height: 15px;
+    width: 15px;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgba(255,255,255,0.7);
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 0 rgba(255,255,255,0.3);
+}
+
+.grid-info .fav-icon img{
+    height: 15px;
+    width: 15px;
 }
 
 .movies-carrusel{
-    grid-area: related;
-    border:1px solid blueviolet;
+    grid-area: related;    
 }
+
+
 
 section{    
     margin: 0;
 }
 
+@media (min-width:425px){
+    .grid-container{                
+        gap: 1rem;
+    } 
+    .grid-details .details-trailer-container{    
+        margin: auto;
+        max-width: 80%;
+    }
+}
+
 @media (min-width:650px){
     .grid-container{        
         grid-template-columns: minmax(200px, 200px) minmax(400px, auto);
-        grid-template-rows: repeat(4,auto);
+        grid-template-rows: auto 300px auto auto;
         gap: 1rem;
         grid-template-areas: "header header"
                              "cover details"
@@ -59,10 +116,20 @@ section{
     } 
     
     .grid-info{
-        min-height: 3rem;                
+        min-height: 7rem;                
     }
     .grid-cover{
-        width: 200px;        
+        width: 200px;
+        height: 300px;       
+    }
+
+    .grid-details{
+        max-height: 800px;
+    }
+
+    .grid-details .details-trailer-container{    
+        margin: auto;
+        max-width: 95%;        
     }
 }
 
@@ -72,10 +139,17 @@ section{
     } 
 }
 
+@media (min-width:1024px){
+    .grid-details .details-trailer-container{    
+        margin: auto;
+        max-width: 65%;
+    }
+}
+
 @media (min-width:1440px){
     .grid-container{        
         grid-template-columns: minmax(300px, 300px) minmax(400px, auto);
-        grid-template-rows: repeat(4,auto);
+        grid-template-rows: auto 445px auto auto;
         gap: 1rem;
         grid-template-areas: "header header"
                              "cover details"
@@ -83,6 +157,12 @@ section{
                              "related related";        
     }   
     .grid-cover{
-        width: 300px;        
+        width: 300px;
+        height: 445px;        
+    }
+
+    .grid-details .details-trailer-container{    
+        margin: auto;
+        max-width: 50%;
     }
 }
