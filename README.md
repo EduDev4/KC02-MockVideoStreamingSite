@@ -51,9 +51,9 @@
   - Secciones de enlaces orgnaizadas con **Flex-box** con un ancho mínimo para que en se agrupen de 2 en 2 secciones. Si la pantalla es menor que ese ancho mínimo, entonces sí se agrupan una encima de otra.  
   
 ## Página de login:  
-  Login con video BG responsive (**media query**)  
-  Inputs estilo material. La linea del input se pone roja si el dato no es valido. (**transition**)  
-  Enlaces <a> en display flex. Si la pantalla es estrecha, se ponen en columna con la correspondiente separación entre ellos.  
+  - Login con video BG responsive (**media query**)  
+  - Inputs estilo material. La linea del input se pone roja si el dato no es valido. (**transition**)  
+  - Enlaces <a> en display flex. Si la pantalla es estrecha, se ponen en columna con la correspondiente separación entre ellos.  
   
 ## Página de Inicio:    
   Sección de "Trending now" (Carrusel)  
