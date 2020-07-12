@@ -4,7 +4,7 @@
   
   **Páginas**:  
     Login        
-    Index
+    Index  
     Details    
   
   **Paleta de colores**:  
