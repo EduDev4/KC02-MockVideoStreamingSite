@@ -6,7 +6,7 @@
     justify-content: stretch;    
     background-color: #EEE; 
     width: 100vw;
-    min-width: 300px;      
+    min-width: 375px;      
     height: var(--navbar-height);
     position: fixed;
     top:0;
