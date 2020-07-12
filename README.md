@@ -6,7 +6,7 @@
     Login  
     404  
     Index  
-    Detail
+    Details
     Coming Soon
   
   **Paleta de colores**:  
@@ -31,23 +31,51 @@
     logo-square-small.png  
     logo-small.png  
     logo-large.png  
+   
+  **Barras de scroll**:  
+    Rediseñadas  
+  
+  **Titulos y subtitulos**:  
+    Los títulos de las secciones son grandes con una linea verde debajo.  
+    Los subtítulos son más pequeños con una linea gris debajo. (Usados en la página de Details)  
+    
+  **Schema.org Movies**
+    Utilizado los schemas Person y Movie para marcar la información de las películas y actores.
+  
+## Navbar: 
+ - Dos logos. Uno ancho para cuando hay espacio suficiente y otro cuadrado para cuando el ancho de la pantalla es pequeño. (**picture source**)  
+ - La caja de búsqueda siempre está visible y se ajusta en base al ancho de la pantalla. Dejando sitio al menú en pantallas más anchas y ocupando casi toda la barra en pantallas estrechas donde el logo y el menú se han adaptado para ocupar poco (Burger y logo cuadrado).  
+ - Cuando el menú se muestra en pantallas pequeñas (pulsando **Burger-checkbox**) éste aparece deslizandose desde arriba. (**animation**)  
+
+## Footer:  
+  - Secciones de enlaces orgnaizadas con **Flex-box** con un ancho mínimo para que en se agrupen de 2 en 2 secciones. Si la pantalla es menor que ese ancho mínimo, entonces sí se agrupan una encima de otra.  
   
 ## Página de login:  
-  Login con video BG responsive  
-  Inputs estilo material. La linea del input se pone roja si el dato no es valido.  
+  Login con video BG responsive (**media query**)  
+  Inputs estilo material. La linea del input se pone roja si el dato no es valido. (**transition**)  
   Enlaces <a> en display flex. Si la pantalla es estrecha, se ponen en columna con la correspondiente separación entre ellos.  
   
-## Página de Inicio:  
-  Menú de navegación adherido a la parte superior. Responsive:  
-  - Dos logos que cargan en función del ancho de la pantalla.    
-  - El menú para pantallas grandes usa flex-box para que se adapte perfectamente en función del ancho total de la pantalla.  
-  - El menú se oculta y se muestran 3 lineas (burger menu) si la pantalla es demasiado pequeña.  
-  - La barra de búsqueda queda siempre visible para facilitar su uso. Su ancho se adapta en fucnión del ancho de la pantalla.
-  
-  Sección de "Trending now" (Carrusel)
+## Página de Inicio:    
+  Sección de "Trending now" (Carrusel)  
   - Maqueta de un carrusel.  
-  - Corto video de la película en autoplay.  
-  - En pantallas grandes, la info de la película se muestra solo al hacer Hover sobre el video.  
-  - En pantallas pequeñas la info de la pelicula se muestra debajo del video de forma permanente. Esto evita que el texto de la info ocupe todo el vide al ser la pantalla demasiado pequeña.  
+  - Corto video de la película en autoplay. (**&lt;video&gt; tag con atributos adaptados**)  
+  - En pantallas grandes, la info de la película se muestra solo al hacer Hover sobre el video.  (**Hover / Selectores avanzados**)  
+  - En pantallas pequeñas la info de la pelicula se muestra debajo del video de forma permanente. Esto evita que el texto de la info ocupe todo el vide al ser la pantalla demasiado pequeña. (**media query**)  
+  - Efecto de televisión en el video de la sección Trending (box-shadow + animation). Leves destellos alrededor del video. (**keyframes + animation**)  
   
+  Parrillas de películas (New Releases, Series, Movies).  
+  - Contenido reajustado con **Flex-box**. El tamaño de las caratulas varía (escogiendo una imagen más grande o más pequeña) según el ancho de la pantalla. (**&lt;source&gt; tag con varias alternativas**)  
+  - En móviles, las secciónes muestran las carátulas en una sola linea con scroll horizontal. (**Flex-box nowrap + overflow**) 
+  - Al pasar por encima de cada carátula se muestran pequeños detalles de está además de los iconos de "Favorito" y "Ver Después". En pantallas pequéñas (principalmente táctiles) se mostrará este contenido al tocar con el dedo en la carátula. Pudiendo ver más detalles si se pulsa en el enlace de "View Details".  (**Hover**)  
+  - El main ajusta su margen exterior en función del ancho de la pantalla. En móviles el margen es menor para aprovechar mejor el escaso espacio. (**media query**)  
   
+## Página de Detalles:  
+  - Secciones organizadas con **css-grid**.  
+  - Usando **media queries** se recolocan las celdas.  
+    - Encima de los detalles se muestra el path de navegación.  
+    - En version móvil se muestra primero la carátula junto con los detalles y debajo botón de "Watch Now" y la descripción. La carátula se hace más grande y más pequeña. (**&lt;source&gt; tag con varias alternativas**)  
+    - La ficha del director se muestra en un sitio u otro dependiendo de la pantalla. (**media queries**)  
+    - En pantallas más anchas, el botón de "Watch Now" y los detalles quedan debajo de la carátula dejando todo el lado derecho para la descripción y el trailer. (**&lt;video&gt; tag con controles**)  
+    - Debajo siempre irá el reparto de la película que en pantallas pequeñas se mostrará en una sola linea con scroll horizontal. (**Flex-box nowrap + overflow**)
+  - Debajo del detalle de la película se muestra carrusel con Contenido Relacionado. **CSS reutilizado de Carruseles de página de inicio**  
+
