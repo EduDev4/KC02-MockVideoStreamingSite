@@ -3,21 +3,17 @@
 ## Definiciones:  
   
   **Páginas**:  
-    Login  
-    404  
-    Index  
-    Details
-    Coming Soon
+    Login        
+    Index
+    Details    
   
   **Paleta de colores**:  
     --gunmetal: rgba(52, 58, 64, 1);  
     --slate-gray: rgba(108, 117, 125, 1);  
     --light-gray: rgb(241, 240, 240);  
     --apple-green: rgba(134, 188, 37, 1);  
-    --azure: rgba(0, 123, 255, 1);  
-    --rusty-red: rgba(220, 53, 69, 1);  
-    --heat-wave: rgba(253, 126, 20, 1);  
-    --mikado-yellow: rgba(255, 193, 7, 1);  
+    --azure: rgba(0, 123, 255, 1);      
+    --heat-wave: rgba(253, 126, 20, 1);      
   
   **Fuente por defecto**:  
     font-family: Signika;  
@@ -40,7 +36,12 @@
     Los subtítulos son más pequeños con una linea gris debajo. (Usados en la página de Details)  
     
   **Schema.org Movies**
-    Utilizado los schemas Person y Movie para marcar la información de las películas y actores.
+    Utilizado los schemas Person y Movie para marcar la información de las películas y actores así como el video del Trailer.  
+
+## Página de login:  
+  - Login con video BG responsive (**media query**)  
+  - Inputs estilo material. La linea del input se pone roja si el dato no es valido. (**transition, :invalid**)  
+  - Enlaces <a> en display flex. Si la pantalla es estrecha, se ponen en columna con la correspondiente separación entre ellos. (**Flex-box**)  
   
 ## Navbar: 
  - Dos logos. Uno ancho para cuando hay espacio suficiente y otro cuadrado para cuando el ancho de la pantalla es pequeño. (**picture source**)  
@@ -49,12 +50,7 @@
 
 ## Footer:  
   - Secciones de enlaces orgnaizadas con **Flex-box** con un ancho mínimo para que en se agrupen de 2 en 2 secciones. Si la pantalla es menor que ese ancho mínimo, entonces sí se agrupan una encima de otra.  
-  
-## Página de login:  
-  - Login con video BG responsive (**media query**)  
-  - Inputs estilo material. La linea del input se pone roja si el dato no es valido. (**transition**)  
-  - Enlaces <a> en display flex. Si la pantalla es estrecha, se ponen en columna con la correspondiente separación entre ellos.  
-  
+    
 ## Página de Inicio:    
   Sección de "Trending now" (Carrusel)  
   - Maqueta de un carrusel.  
