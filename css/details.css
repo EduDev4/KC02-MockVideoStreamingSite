@@ -45,10 +45,15 @@
     grid-area: details;        
     max-height: 300px;
     overflow: auto;
+    padding-bottom: 1rem;
 }
 
 .grid-cast{
     grid-area: cast;      
+}
+
+.grid-details .details-text{
+    margin-bottom: 2rem;
 }
 
 .grid-details .details-trailer-container{    
