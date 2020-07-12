@@ -213,9 +213,7 @@ section{
         display: none;
     }
 
-    .watch-now-button{        
-        line-height: 2rem;
-    }
+   
 }
 
 @media (min-width:768px){
@@ -234,7 +232,7 @@ section{
 @media (min-width:1440px){
     .grid-container{        
         grid-template-columns: minmax(300px, 300px) minmax(400px, auto);
-        grid-template-rows: auto 445px auto auto auto;
+        grid-template-rows: auto 445px auto auto auto auto;
         gap: 1rem;
         grid-template-areas: "header header"
                              "cover details"
