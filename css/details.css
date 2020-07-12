@@ -9,6 +9,7 @@
     gap: 0.5rem;
     grid-template-areas: "header header"
                             "cover info"
+                            "watch watch"
                             "details details"
                             "cast cast"
                             "related related";
@@ -41,6 +42,9 @@
     grid-area: info;    
     position: relative; 
     font-size: 10pt;     
+}
+.grid-watch{
+    grid-area: watch;  
 }
 .grid-details{
     grid-area: details;        
@@ -139,6 +143,20 @@
     overflow: hidden;
     z-index: 99;
 }
+
+.watch-now-button{
+    width: 100%;
+    line-height: 1rem;
+    padding: 0.5rem;
+    vertical-align: middle;
+    margin: 1rem 0;
+    background-color: var(--apple-green);
+    color:#111;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .movies-carrusel{
     grid-area: related;    
 }
@@ -160,10 +178,11 @@ section{
 @media (min-width:651px){
     .grid-container{        
         grid-template-columns: minmax(200px, 200px) minmax(400px, auto);
-        grid-template-rows: auto 300px auto auto auto;
+        grid-template-rows: auto 300px auto auto auto auto;
         gap: 1rem;
         grid-template-areas: "header header"
                              "cover details"
+                             "watch details"
                              "info details"
                              "cast cast"
                              "related related";
@@ -193,6 +212,10 @@ section{
     .director-container-cast{
         display: none;
     }
+
+    .watch-now-button{        
+        line-height: 2rem;
+    }
 }
 
 @media (min-width:768px){
@@ -211,10 +234,11 @@ section{
 @media (min-width:1440px){
     .grid-container{        
         grid-template-columns: minmax(300px, 300px) minmax(400px, auto);
-        grid-template-rows: auto 445px auto auto;
+        grid-template-rows: auto 445px auto auto auto;
         gap: 1rem;
         grid-template-areas: "header header"
                              "cover details"
+                             "watch details"
                              "info details"
                              "cast cast"
                              "related related";        
